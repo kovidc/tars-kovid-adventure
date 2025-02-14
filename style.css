@@ -1,0 +1,109 @@
+/* General Body Styles */
+body {
+  background-color: #fff0f0;  /* Light pinkish background for a warm, romantic feel */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Main Container */
+#main-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Heading Styles */
+h1 {
+  color: #000;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #ff69b4;  /* Hot pink button color */
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8fd1;
+}
+
+/* Game Container and Canvas */
+#gameContainer {
+  margin: 20px auto;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#gameCanvas {
+  background-color: #f0fff0;  /* Light greenish tint for the canvas (optional) */
+}
+
+/* End Screen Styles */
+#endScreen {
+  padding: 20px;
+  background-color: #ffe6f0;  /* Soft pink background */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#endScreen h2 {
+  color: #000;
+  font-size: 2em;
+}
+
+#endScreen p {
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Additional Styles for the Wordle Game */
+.wordle-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.wordle-tile {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 2px;
+  font-size: 24px;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  border: 2px solid #ff69b4; /* Hot pink border */
+  background-color: #fff;    /* White background */
+}
+
+/* Additional Styles for the Memory Match Game */
+.memory-card {
+  width: 100px;
+  height: 100px;
+  background-color: #ffcccb; /* Light pink background */
+  border: 2px solid #ff69b4; /* Hot pink border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-size: 24px;
+  cursor: pointer;
+}

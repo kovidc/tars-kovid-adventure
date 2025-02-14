@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tars & Kovid: A Love Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>tars & kovid: a love adventure :)</h1>
+    <!-- Start button calls startGame() defined in game.js -->
+    <button id="startGameBtn" onclick="startGame()">Start the Adventure</button>
+    
+    <!-- This container holds all game-related elements -->
+    <div id="gameContainer">
+      <!-- Narration area for context screens and level instructions -->
+      <div id="narration"></div>
+      <!-- Canvas used for Level 1 (the running game) -->
+      <canvas id="gameCanvas" width="800" height="400"></canvas>
+      <!-- Puzzle container used for Levels 2 & 3 -->
+      <div id="puzzleContainer" style="display: none;"></div>
+      <!-- Optional timer element (hidden by default) -->
+      <div id="timer" style="display: none;"></div>
+    </div>
+    
+    <!-- End screen for the final reveal -->
+    <div id="endScreen" style="display: none;">
+      <h2>You made it, Tars!</h2>
+      <p>After all the challenges, Kovid has finally arrived with the flowers. Now it’s your turn to decide… Will you be Kovid’s valentine?</p>
+      <button id="yesBtn">Yes!</button>
+      <button id="noBtn">No!</button>
+    </div>
+  </div>
+  
+  <!-- Link your JavaScript files -->
+  <script src="script.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
